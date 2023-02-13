@@ -16,24 +16,22 @@ h1 {
   height: 170px;
   object-fit: cover;
 }
-
-#family-name {
+.owner-name {
   position: absolute;
-  margin: 0;
-  color: white;
-  font-size: 45px;
   top: 272.5px;
   left: 105px;
+  margin: 0;
   font-family: Rajdhani-Medium;
+  color: white;
+}
+#family-name {
+  margin: 0;
+  font-size: 45px;
+  line-height: 1;
 }
 
 #first-name {
-  position: absolute;
   margin: 0;
-  color: white;
-  top: 319.5px;
-  left: 105px;
-  font-family: Rajdhani-Medium;
 }
 
 #position {
