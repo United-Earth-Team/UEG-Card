@@ -16,24 +16,22 @@ h1 {
   height: 170px;
   object-fit: cover;
 }
-
-#family-name {
+.owner-name {
   position: absolute;
-  margin: 0;
-  color: white;
-  font-size: 45px;
   top: 272.5px;
   left: 105px;
+  margin: 0;
   font-family: Rajdhani-Medium;
+  color: white;
+}
+#family-name {
+  margin: 0;
+  font-size: 45px;
+  line-height: 1;
 }
 
 #first-name {
-  position: absolute;
   margin: 0;
-  color: white;
-  top: 319.5px;
-  left: 105px;
-  font-family: Rajdhani-Medium;
 }
 
 #position {
@@ -62,16 +60,37 @@ button {
     color: white;
 }
 
-
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .input-boxes {
-  width: 45vw;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  width: 80%;
+}
+#all {
+  position: relative;
 }
 
-@media screen and (max-width:670px){
-  .input-boxes {
-    width: 100%;
-    margin-bottom: 20px;
+.col-24 {
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .col-md-8 {
+    width: 33.33333%;
+  }
+  .col-md-12 {
+    width: 50%;
+  }
+  .col-md-16 {
+    width: 66.66667%
   }
 }
+

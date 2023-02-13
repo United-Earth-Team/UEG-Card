@@ -15,47 +15,53 @@
         style="width: 79px; margin: 0 auto"
       />
     </div>
-    <div
-      style="width: 360px; margin: 0 auto; margin-top: 20px; position: relative"
-      id="all"
-    >
-      <img
-        src="./background.png"
-        alt=""
-        style="
+    <div class="flex-row">
+      <div class="col col-24 col-md-12">
+        <div
+                id="all"
+        >
+          <img
+                  src="./background.png"
+                  alt=""
+                  style="
           width: 360px;
           height: 100%;
           background-image: url('./background.png');
         "
-      />
-      <img id="profile-picture" src="./LiXuejian.png" />
-      <h1 id="family-name">ZHOU</h1>
-      <h2 id="first-name">ZHEZHI</h2>
-      <h3 id="position">PERMANENT REPRESENTATIVE</h3>
-      <div
-        style="
+          />
+          <img id="profile-picture" src="./LiXuejian.png" />
+          <div class="owner-name">
+            <h1 id="family-name">ZHOU</h1>
+            <h2 id="first-name">ZHEZHI</h2>
+          </div>
+          <h3 id="position">PERMANENT REPRESENTATIVE</h3>
+          <div
+                  style="
           background-color: rgb(7, 52, 97);
           padding-top: 0.5px;
           padding-bottom: 0.5px;
           padding-left: 8px;
           padding-right: 8px;
         "
-      >
-        <h5 style="text-align: center; color: white">
-          由 架空UEG网站 生成<br />访问 uegov.world/ueg-card
-        </h5>
+          >
+            <h5 style="text-align: center; color: white">
+              由 架空UEG网站 生成<br />访问 uegov.world/ueg-card
+            </h5>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="col col-24 col-md-12">
+        <div class="input-boxes">
+          <h1>输入定制信息</h1>
+          <input type="file" id="upload" style="color: white" />
+          <input type="text" placeholder="姓" id="input-family-name" />
+          <input type="text" placeholder="名" id="input-first-name" />
+          <input type="text" placeholder="职位" id="input-position" />
 
-    <div class="input-boxes">
-    <h1>输入定制信息</h1>
-    <input type="file" id="upload" style="color: white" />
-    <input type="text" placeholder="姓" id="input-family-name" />
-    <input type="text" placeholder="名" id="input-first-name" />
-    <input type="text" placeholder="职位" id="input-position" />
-
-    <button onclick="start()">生成</button>
-    <a href="" download style="display: none" id="download"></a>
+          <button onclick="start()">生成</button>
+          <a href="" download style="display: none" id="download"></a>
+        </div>
+      </div>
     </div>
     <script src="./html2canvas.min.js"></script>
     <script>
